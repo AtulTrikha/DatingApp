@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace API.Extensions
 {
-    //Custom Service created to Add Identity(Authenctication and Authorization) Services in Middlewear
+    //Custom Service created to Add Identity(Authenctication and Authorization) Services in Middleware
     public static class IdentityServiceExtensions
     {
          public static IServiceCollection AddIdentityServices(this IServiceCollection services, IConfiguration config)

@@ -22,13 +22,13 @@ builder.Services.AddIdentityServices(builder.Configuration);
 //Build 
 var app = builder.Build();
 
-//Add CORS Middlewear
+//Add CORS Middleware
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
-//Add Authentication Middlewear
+//Add Authentication Middleware
 app.UseAuthentication();
 
-//Add Authorization Middlewear
+//Add Authorization Middleware
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

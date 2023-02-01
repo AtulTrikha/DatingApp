@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Extensions
 {
-    //Custom Service created to Add Application Services in Middlewear
+    //Custom Service created to Add Application Services in Middleware
     public static class ApplicationServiceExtensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
